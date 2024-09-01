@@ -61,18 +61,24 @@ Saves the DataFrame to a CSV file named RB_bus_details.csv using to_csv().
 
 **Import Statements:**
  Imported the Streamlit, Pandas, mysql.connector,Plotly Express,streamlit_option_menu library for creating web applications, and query.py module, which contains functions for interacting with the database.
+ 
 **Page Configuration, Image and Title:**
  Sets the title of the Streamlit app to "RedBus App". Displayed an image at the top of the page.
+ 
 **Database Interaction and Data Retrieval:**
  Calls function from the query.py module to retrieve data from the database. Created a pandas DataFrame from the retrieved data using the column names.
+
 **Sidebar:**
  Displayed an image in the sidebar with the caption "Redbus Web App". Created a multiselect widget in the sidebar allowing users to select multiple bus route names.
+
 **Data Filtering and Display:**
  Filters the DataFrame df based on the selected bus route names. Defined a function to display the home page content.
 Created four columns to display the top 3 popular bus names, bus types, average price, and average star rating.
 Defined a function to display a table of the filtered data. Created an expander which allows users to select columns to display the selected columns in a DataFrame.
+
 **Sidebar Menu:**
  Created a sidebar container with options "Home", "Route Links", "Dashboard", and "Popular Cities". The selected option is stored in the menu variable.
+
 **Conditional Execution:**
  Selected menu option executes the functions of displaying table, route links creates two charts using Plotly and retrieves data on popular cities, creates a line chart and a pie chart using Plotly, and displays them.
 
